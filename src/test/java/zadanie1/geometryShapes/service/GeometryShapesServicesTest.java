@@ -26,9 +26,6 @@ public class GeometryShapesServicesTest {
     @Before
     public void init() {
         this.geometryShapesServices = new GeometryShapesServices();
-        List<Shape> shapes = new ArrayList<>();
-        shapes.add(shapeFactory.createCircle(1));
-        shapes.add(shapeFactory.createSquare(3));
     }
 
     @Test
@@ -46,7 +43,6 @@ public class GeometryShapesServicesTest {
         Shape largestPerimeterShape = this.geometryShapesServices.findFigureWithLargestPerimeter(Arrays.asList(square, circle));
         assertEquals(square, largestPerimeterShape);
     }
-
 
     @Test
     public void returnTrueWhenPossibleToImportListOfShapesFromJSON() {
@@ -76,12 +72,12 @@ public class GeometryShapesServicesTest {
     public void shouldExportCorrectJsonFormat() {
         Circle shape1 = (Circle) shapeFactory.createCircle(1);
         Square shape2 = (Square) shapeFactory.createSquare(3);
-        List<Shape> list = new ArrayList<>(Arrays.asList(shape1,shape2));
+        List<Shape> list = new ArrayList<>(Arrays.asList(shape1, shape2));
         String testJsonFormat = "testpath.json";
         String jsonFormat = "";
         String expectedFormat = "[{\"type\":\"circle\",\"radius\":1.0},{\"type\":\"square\",\"side\":3.0}]";
-        GeometryShapesServices.exportShapesToJSON(list,testJsonFormat);
-        try(BufferedReader reader = new BufferedReader(new FileReader(testJsonFormat))) {
+        GeometryShapesServices.exportShapesToJSON(list, testJsonFormat);
+        try (BufferedReader reader = new BufferedReader(new FileReader(testJsonFormat))) {
             jsonFormat = reader.readLine();
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -89,11 +85,10 @@ public class GeometryShapesServicesTest {
         assertEquals(expectedFormat, jsonFormat);
 
         File testFile = new File(testJsonFormat);
-        if(testFile.exists()){
+        if (testFile.exists()) {
             testFile.delete();
         }
     }
-
 
     @Test
     public void shouldImportShapesFromJson() {
@@ -103,7 +98,7 @@ public class GeometryShapesServicesTest {
 
         List<Shape> importedShapes = geometryShapesServices.importShapesFromJSON("test.json");
 
-        assertEquals(shapes,importedShapes);
+        assertEquals(shapes, importedShapes);
     }
 }
 
