@@ -1,10 +1,2 @@
 
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ğÚ8İŞ¦ë¸1
-M
-java:S1172!"+Remove this unused method parameter "list".(‘Ë¹¯úÿÿÿÿ8û·ì¸1
-G	java:S106'"+Replace this use of System.out by a logger.(¹îÆ8‚¸ì¸1
-L	java:S106)"+Replace this use of System.out by a logger.(¦´€‰üÿÿÿÿ8ƒ¸ì¸1
-M
-java:S1068"0Remove this unused "objectMapper" private field.(¹„Á¨8¸ì¸1
-F
-java:S1068"*Remove this unused "writer" private field.(Š†Î|8‹´¨ë¸1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ğÚ8¸é«øÃ1

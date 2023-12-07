@@ -15,3 +15,23 @@ y
 Isrc/main/java/zadanie1/geometryShapes/service/GeometryShapesServices.java,1/0/102807898ff1a3f9bcc5e1f6e0df61972463e0cb
 P
  src/main/java/zadanie1/Main.java,f/4/f4dc7dab76ec26ccf0e094e50d1eabe80cbb9e02
+q
+Asrc/test/java/zadanie1/geometryShapes/model/ShapeFactoryTest.java,4/e/4e94fb8f7bfa0001034977dac022a78794b6419d
+k
+;src/test/java/zadanie1/geometryShapes/model/SquareTest.java,3/7/37b4ec9cb4cc5a22511322caa6ee8bad7495bfa1
+g
+7src/test/java/zadanie2/service/CurrencyServiceTest.java,5/e/5ec42305582d4bf51bde489b43835a03109beda0
+n
+>src/test/java/zadanie1/geometryShapes/model/RectangleTest.java,5/0/5044e07b6aa87fa05c73c94be924c1dae9670fd0
+k
+;src/test/java/zadanie1/geometryShapes/model/CircleTest.java,e/a/eaf820629e1657b277c513ba60072fc4689e8704
+y
+Isrc/main/java/zadanie1/geometryShapes/exceptions/JSONExportException.java,9/a/9a509e91bbc1718bb948e93d7e535b1659a3d757
+Š
+Zsrc/main/java/zadanie1/geometryShapes/exceptions/ValueCanNotBeZeroOrNegativeException.java,0/7/07823d167f301d5c707c6d912b1e44b8b5637a41
+9
+	test.json,0/8/0866e153dfcc6bd976c2117b14bbaec292d57f78
+y
+Isrc/main/java/zadanie1/geometryShapes/exceptions/JSONImportException.java,b/1/b1240ec4f0351d8264703c615e97d767ea1c85d5
+}
+Msrc/test/java/zadanie1/geometryShapes/service/GeometryShapesServicesTest.java,b/2/b2766efe392c7f457d8962ae27b87ee1a6cdf4fd

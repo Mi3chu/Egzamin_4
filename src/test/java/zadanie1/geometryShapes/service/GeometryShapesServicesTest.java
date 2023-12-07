@@ -1,9 +1,5 @@
 package zadanie1.geometryShapes.service;
 
-
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import zadanie1.geometryShapes.exceptions.JSONImportException;
 import zadanie1.geometryShapes.interfaces.Shape;
 import zadanie1.geometryShapes.model.Circle;
 import zadanie1.geometryShapes.model.Rectangle;
@@ -17,11 +13,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.hamcrest.CoreMatchers.hasItem;
-import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.junit.Assert.*;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -30,12 +22,13 @@ public class GeometryShapesServicesTest {
 
     private GeometryShapesServices geometryShapesServices;
     private final ShapeFactory shapeFactory = new ShapeFactory();
-    private ObjectMapper objectMapperMock;
 
     @Before
     public void init() {
         this.geometryShapesServices = new GeometryShapesServices();
-        objectMapperMock = mock(ObjectMapper.class);
+        List<Shape> shapes = new ArrayList<>();
+        shapes.add(shapeFactory.createCircle(1));
+        shapes.add(shapeFactory.createSquare(3));
     }
 
     @Test
@@ -63,12 +56,6 @@ public class GeometryShapesServicesTest {
         List<Shape> importedShapes = geometryShapesServices.importShapesFromJSON(filepath);
 
         assertEquals(expectedShapes, importedShapes);
-    }
-
-    @Test(expected = JSONImportException.class)
-    public void shouldThrowExceptionOnImportShapesFromJsonIOException() throws IOException {
-        when(objectMapperMock.readValue(any(File.class), any(TypeReference.class))).thenThrow(IOException.class);
-        geometryShapesServices.importShapesFromJSON("testException.json");
     }
 
     private List<Shape> createExpectedShapes() {

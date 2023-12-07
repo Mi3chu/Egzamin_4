@@ -1,4 +1,10 @@
 
+{
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "circle".(©£¿ò8Óàž®Ã1
+{
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "square".(Õ¬„Æ8Ôàž®Ã1
+ƒ
+java:S1488+"aImmediately return this expression instead of assigning it to the temporary variable "rectangle".( §–²ùÿÿÿÿ8Ôàž®Ã1
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Æ­”í
 —
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(òùÛ¥
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(òùÛ¥

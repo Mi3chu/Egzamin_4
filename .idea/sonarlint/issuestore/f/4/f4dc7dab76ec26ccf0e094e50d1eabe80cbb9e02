@@ -1,36 +1,5 @@
 
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ò­•Çüÿÿÿÿ
-L
-java:S1854"6Remove this useless assignment to local variable "s3".(¯ÔÕ«
-Q
-java:S1854"6Remove this useless assignment to local variable "s2".(€•Üùûÿÿÿÿ
-Q
-java:S1854"6Remove this useless assignment to local variable "s1".(ÍÙÏÛşÿÿÿÿ
-Q
-java:S1854"6Remove this useless assignment to local variable "r3".(†—´±ıÿÿÿÿ
-K
-java:S1854"6Remove this useless assignment to local variable "r2".(Ÿ¿ÂB
-Q
-java:S1854"6Remove this useless assignment to local variable "r1".(şüãëûÿÿÿÿ
-Q
-java:S1854"6Remove this useless assignment to local variable "c2".(êçÿëıÿÿÿÿ
-Q
-java:S1854"6Remove this useless assignment to local variable "c1".(¯ØÎÙøÿÿÿÿ
-B
-java:S1481"'Remove this unused "c1" local variable.(¯ØÎÙøÿÿÿÿ
-B
-java:S1481"'Remove this unused "c2" local variable.(êçÿëıÿÿÿÿ
-B
-java:S1481"'Remove this unused "r1" local variable.(şüãëûÿÿÿÿ
-<
-java:S1481"'Remove this unused "r2" local variable.(Ÿ¿ÂB
-B
-java:S1481"'Remove this unused "r3" local variable.(†—´±ıÿÿÿÿ
-B
-java:S1481"'Remove this unused "s1" local variable.(ÍÙÏÛşÿÿÿÿ
-B
-java:S1481"'Remove this unused "s2" local variable.(€•Üùûÿÿÿÿ
-=
-java:S1481"'Remove this unused "s3" local variable.(¯ÔÕ«
-E	java:S106"+Replace this use of System.out by a logger.(ÊÁøùúÿÿÿÿ
-?	java:S106"+Replace this use of System.out by a logger.(îø
+R
+java:S2209"5Change this instance-reference to a static reference.(¥Éÿ°8¾‚¶®Ã1
+G	java:S106"+Replace this use of System.out by a logger.(¦Íñş8ÒŞ®Ã1
